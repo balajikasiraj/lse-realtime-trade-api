@@ -1,0 +1,68 @@
+# Visual Studio / .NET
+.vs/
+.vscode/
+.idea/
+
+# Build outputs
+bin/
+obj/
+artifacts/
+publish/
+
+# Rider
+*.sln.iml
+*.ipr
+*.iws
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+# NuGet
+*.nupkg
+.packages/
+packages/
+
+# MSBuild generated
+*.g.cs
+*.g.i.cs
+*.Designer.cs
+
+# Logs, coverage, test results
+*.log
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# Dotnet tools, launch settings, secrets
+dotnet-tools.json
+launchSettings.json
+secrets.json
+local.settings.json
+appsettings.*.Local.json
+appsettings.Local.json
+
+# EF Core / local DBs
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Publish / deployment
+*.Publish.xml
+publish/
+deploy/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Optional: VS Code workspace files
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json

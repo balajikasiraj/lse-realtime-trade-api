@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/LseRealtimeTradeApi/.vs/LseRealtimeTradeApi
+/LseRealtimeTradeApi/Lse.Application/bin/Debug/net8.0
+/LseRealtimeTradeApi/Lse.Application/obj
+/LseRealtimeTradeApi/Lse.Tests/bin/Debug/net8.0
+/LseRealtimeTradeApi/Lse.Tests/obj
+/LseRealtimeTradeApi/Lse.Infrastructure/bin/Debug/net8.0
+/LseRealtimeTradeApi/Lse.Infrastructure/obj
+/LseRealtimeTradeApi/Lse.API/bin/Debug/net8.0
+/LseRealtimeTradeApi/.vs/ProjectEvaluation
+/LseRealtimeTradeApi/Lse.Domain/bin/Debug
+/LseRealtimeTradeApi/Lse.Domain/obj
+/LseRealtimeTradeApi/Lse.API/obj

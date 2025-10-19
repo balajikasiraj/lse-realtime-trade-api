@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lse.API", "Lse.API\Lse.API.csproj", "{D3A1B4C2-8F3E-4A9F-9B2F-1C2D3E4F5A6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lse.Application", "Lse.Application\Lse.Application.csproj", "{A1B2C3D4-1111-2222-3333-444455556666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lse.Domain", "Lse.Domain\Lse.Domain.csproj", "{11111111-2222-3333-4444-555555555555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lse.Infrastructure", "Lse.Infrastructure\Lse.Infrastructure.csproj", "{22222222-3333-4444-5555-666666666666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lse.Tests", "Lse.Tests\Lse.Tests.csproj", "{33333333-4444-5555-6666-777777777777}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3A1B4C2-8F3E-4A9F-9B2F-1C2D3E4F5A6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A1B4C2-8F3E-4A9F-9B2F-1C2D3E4F5A6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A1B4C2-8F3E-4A9F-9B2F-1C2D3E4F5A6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A1B4C2-8F3E-4A9F-9B2F-1C2D3E4F5A6B}.Release|Any CPU.Build.0 = Release|Any CPU
+
+		{A1B2C3D4-1111-2222-3333-444455556666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-1111-2222-3333-444455556666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-1111-2222-3333-444455556666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-1111-2222-3333-444455556666}.Release|Any CPU.Build.0 = Release|Any CPU
+
+		{11111111-2222-3333-4444-555555555555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11111111-2222-3333-4444-555555555555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11111111-2222-3333-4444-555555555555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11111111-2222-3333-4444-555555555555}.Release|Any CPU.Build.0 = Release|Any CPU
+
+		{22222222-3333-4444-5555-666666666666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22222222-3333-4444-5555-666666666666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22222222-3333-4444-5555-666666666666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22222222-3333-4444-5555-666666666666}.Release|Any CPU.Build.0 = Release|Any CPU
+
+		{33333333-4444-5555-6666-777777777777}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33333333-4444-5555-6666-777777777777}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33333333-4444-5555-6666-777777777777}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33333333-4444-5555-6666-777777777777}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
