@@ -8,7 +8,8 @@ using System.Collections.Generic;
 namespace Lse.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     public class TradesController : ControllerBase
     {
         private readonly ITradeService _service;

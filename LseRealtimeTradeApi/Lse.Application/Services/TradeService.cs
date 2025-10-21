@@ -1,11 +1,14 @@
 using Lse.Domain;
-using Lse.Infrastructure.Repositories;
+using Lse.Domain.Repositories;
+using Lse.Application.Eventing;
+using Lse.Application.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+
 
 namespace Lse.Application.Services
 {
@@ -20,10 +23,12 @@ namespace Lse.Application.Services
     public class TradeService : ITradeService
     {
         private readonly ITradeRepository _repo;
+        private readonly IEventPublisher? _publisher;
 
-        public TradeService(ITradeRepository repo)
+        public TradeService(ITradeRepository repo, IEventPublisher? publisher = null)
         {
             _repo = repo;
+            _publisher = publisher;
         }
 
         public async Task RecordTradeAsync(Trade trade, CancellationToken ct = default)
@@ -40,6 +45,28 @@ namespace Lse.Application.Services
             trade.Id = Guid.NewGuid();
             trade.Timestamp = DateTime.UtcNow;
             await _repo.AddAsync(trade, ct);
+
+            if (_publisher != null)
+            {
+                var ev = new TradeRecordedEvent
+                {
+                    TradeId = trade.Id,
+                    Ticker = trade.Ticker,
+                    Price = trade.Price,
+                    Quantity = trade.Quantity,
+                    BrokerId = trade.BrokerId,
+                    Timestamp = trade.Timestamp
+                };
+
+                try
+                {
+                    await _publisher.PublishAsync(ev, ct);
+                }
+                catch
+                {
+                    // swallow publisher exceptions to avoid breaking the write path
+                }
+            }
         }
 
         public async Task<decimal?> GetCurrentValueAsync(string ticker, CancellationToken ct = default)
