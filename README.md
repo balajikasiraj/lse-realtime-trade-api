@@ -1,4 +1,4 @@
-# LSE Trading Service
+# LSE Trading Services
 
 Production-ready .NET 8 trading service that records trades and serves current market values (average prices). The solution is layered, testable, and designed for extension with Redis, Kafka and container orchestration.
 
